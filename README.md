@@ -17,9 +17,13 @@ Prosjektet er laget som en del av en fullstack-oppgave i IT-faget. I denne versj
 - Installer Docker Desktop
 - Åpne terminal i prosjektmappen
 - Kjør kommandoen:
-  - docker-compose up -d
+    - docker-compose up -d
+
 
 Dette starter en PostgreSQL-database i Docker. SQL-filene i mappen `database/` kjøres automatisk og oppretter tabeller og relasjoner.
+
+Databasen er testet ved å kjøre `docker-compose up -d`. Ved oppstart lastes PostgreSQL-imaget ned (første gang), og containeren `tangen_torv_db` startes. SQL-filene i mappen `database/` kjøres automatisk ved oppstart og oppretter tabeller og relasjoner.
+
 
 ## Prosjektstruktur
 - frontend/
