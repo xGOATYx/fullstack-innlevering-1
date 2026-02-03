@@ -1,32 +1,100 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <title>Tangen Torv Restaurant</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tangen Torv – Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
-  <h1>Tangen Torv</h1>
-  <ul>
-    <li><a href="index.html">Hjem</a></li>
-    <li><a href="menu.html">Meny</a></li>
-    <li><a href="booking.html">Bestill bord</a></li>
-    <li><a href="admin.html">Ansatte</a></li>
-  </ul>
-</nav>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="brand-badge">TT</div>
+      <div class="brand-title">
+        <strong>Tangen Torv</strong>
+        <span>Restaurant</span>
+      </div>
+    </a>
 
-<header class="hero">
-  <h2>Velkommen til Tangen Torv</h2>
-  <p>God mat i hyggelige omgivelser</p>
+    <nav class="nav-links" aria-label="Hovedmeny">
+      <a href="index.html" class="active">Hjem</a>
+      <a href="menu.html">Meny</a>
+      <a href="booking.html">Bestill bord</a>
+      <a href="admin.html">Ansatte</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-secondary" href="menu.html">Se meny</a>
+      <a class="btn btn-primary" href="booking.html">Bestill bord</a>
+    </div>
+  </div>
 </header>
 
-<section>
-  <h3>Åpningstider</h3>
-  <p>Mandag–Fredag: 12:00–22:00</p>
-  <p>Lørdag–Søndag: 14:00–23:00</p>
-</section>
+<main class="container">
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <span class="kicker">Hjemmelaget mat • God stemning • Rimelige priser</span>
+        <h1>Velkommen til Tangen Torv</h1>
+        <p>
+          En moderne restaurant med fokus på gode råvarer, enkle klassikere og en meny som passer både
+          hverdag og helg.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="booking.html">Bestill bord</a>
+          <a class="btn btn-secondary" href="menu.html">Utforsk meny</a>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-box">
+          <h3>Åpningstider</h3>
+          <p>Man–Fre: 12:00–22:00</p>
+          <p>Lør–Søn: 14:00–23:00</p>
+          <small>Kjøkken stenger 30 min før</small>
+        </div>
+
+        <div class="card">
+          <h3>Kontakt</h3>
+          <p>Telefon: 12 34 56 78</p>
+          <p>E-post: post@tangentorv.no</p>
+          <p>Adresse: Tangen Torv 1</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Hvorfor velge oss</h2>
+      <p>Kort oppsummert</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>God mat</h3>
+        <p>Råvarer av god kvalitet og en meny som oppdateres jevnlig.</p>
+      </div>
+      <div class="card">
+        <h3>Enkelt å bestille</h3>
+        <p>Bestill bord på få klikk. (I denne versjonen lagres ikke bestillingen enda.)</p>
+      </div>
+      <div class="card">
+        <h3>Hyggelig atmosfære</h3>
+        <p>Et sted som passer både date night og vennekveld.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container split">
+    <span>Tangen Torv – Fullstack prosjekt</span>
+    <span>Modul 2: Statisk frontend</span>
+  </div>
+</footer>
 
 </body>
 </html>

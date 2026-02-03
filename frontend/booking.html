@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <title>Bestill bord</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestill bord – Tangen Torv</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav> ... </nav>
+<header>
+  <nav>
+    <h1>Tangen Torv</h1>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="menu.html">Meny</a></li>
+      <li><a href="booking.html">Bestill bord</a></li>
+      <li><a href="admin.html">Ansatte</a></li>
+    </ul>
+  </nav>
+</header>
 
-<h2>Bestill bord</h2>
+<main class="container">
+  <section class="hero">
+    <h2>Bestill bord</h2>
+    <p>Fyll inn informasjon under for å sende en bestilling (statisk i Modul 2).</p>
+  </section>
 
-<form class="booking-form">
-  <input type="text" placeholder="Navn" required>
-  <input type="date" required>
-  <input type="time" required>
-  <input type="number" placeholder="Antall gjester" required>
-  <button type="submit">Bestill</button>
-</form>
+  <section class="card">
+    <form>
+      <label for="name">Navn</label>
+      <input id="name" type="text" placeholder="F.eks. Ola Nordmann" required />
+
+      <label for="phone">Telefon</label>
+      <input id="phone" type="tel" placeholder="F.eks. 12345678" required />
+
+      <label for="date">Dato</label>
+      <input id="date" type="date" required />
+
+      <label for="time">Tid</label>
+      <input id="time" type="time" required />
+
+      <label for="guests">Antall gjester</label>
+      <select id="guests" required>
+        <option value="">Velg antall</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+      </select>
+
+      <label for="note">Kommentar (valgfritt)</label>
+      <input id="note" type="text" placeholder="Allergier, barnevogn osv." />
+
+      <button type="submit">Send bestilling</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Tangen Torv – Fullstack prosjekt (Modul 2)</p>
+</footer>
 
 </body>
 </html>

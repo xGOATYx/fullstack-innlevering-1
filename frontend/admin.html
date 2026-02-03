@@ -1,30 +1,72 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <title>Admin</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansatte – Bestillinger</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav> ... </nav>
+<header>
+  <nav>
+    <h1>Tangen Torv</h1>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="menu.html">Meny</a></li>
+      <li><a href="booking.html">Bestill bord</a></li>
+      <li><a href="admin.html">Ansatte</a></li>
+    </ul>
+  </nav>
+</header>
 
-<h2>Bestillinger</h2>
+<main class="container">
+  <section class="hero">
+    <h2>Bestillinger (ansatte)</h2>
+    <p>Oversikt over bordbestillinger. I Modul 2 vises eksempeldata.</p>
+  </section>
 
-<table>
-  <tr>
-    <th>Navn</th>
-    <th>Dato</th>
-    <th>Tid</th>
-    <th>Gjester</th>
-  </tr>
-  <tr>
-    <td>Ola Nordmann</td>
-    <td>10.02.2026</td>
-    <td>18:00</td>
-    <td>4</td>
-  </tr>
-</table>
+  <section class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Navn</th>
+          <th>Telefon</th>
+          <th>Dato</th>
+          <th>Tid</th>
+          <th>Gjester</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ola Nordmann</td>
+          <td>12345678</td>
+          <td>10.02.2026</td>
+          <td>18:00</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Kari Nordmann</td>
+          <td>98765432</td>
+          <td>11.02.2026</td>
+          <td>19:30</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Per Hansen</td>
+          <td>55554444</td>
+          <td>12.02.2026</td>
+          <td>20:00</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Tangen Torv – Fullstack prosjekt (Modul 2)</p>
+</footer>
 
 </body>
 </html>
